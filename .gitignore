@@ -1,0 +1,12 @@
+.env
+.vscode
+.pm2
+/node_modules/*
+.idea/*
+/backup/*
+*.log
+build/
+tmp/
+temp/
+coverage/*
+game/

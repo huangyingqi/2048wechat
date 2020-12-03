@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "strict": false,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "outDir": "./dist",
+    "sourceMap": true,
+    "target": "es5",
+    "allowJs": true,
+    "moduleResolution": "node", 
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "filesGlob": [
+    "./src/*.ts"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc --build",
+    "build-client": "node_modules/.bin/webpack --mode=development --env wx",
+    "test": "NODE_DEV=test PORT=7788 jest",
+    "test:watch": "npm run test -- --watchAll"
+  },
+  "author": "HYQ",
+  "dependencies": {
+    "@pixi/unsafe-eval": "^5.3.3",
+    "gsap": "^3.5.1",
+    "pixi.js": "^5.3.3",
+    "pixi.js-legacy": "^5.3.3",
+    "screenfull": "^5.0.2",
+    "typescript": "^4.0.5",
+    "weapp-adapter": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/gsap": "^1.20.2",
+    "@types/node": "^14.14.6",
+    "@types/weixin-app": "^2.9.1",
+    "copy-webpack-plugin": "^6.3.2",
+    "html-webpack-plugin": "^4.5.0",
+    "ts-loader": "^8.0.9",
+    "ts-node-dev": "^1.0.0",
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.2.0"
+  },
+  "license": "ISC"
+}
