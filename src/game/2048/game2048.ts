@@ -253,8 +253,21 @@ class Game2048 extends Scene{
   }
 
   showResult(): void{
-    this._resultBest.text = "Best: " + this._bestScore;
-    this._resultScore.text = "Score: " + this._curScore;
+    let x = 40;
+    let y = 110; 
+    let span = 40;
+    this.resultContainner.removeChild(this._resultBest);
+    this._resultBest = new PIXI.Text("Best: "+this._bestScore, this._style);
+    this.resultContainner.addChild(this._resultBest);
+    this._resultBest.x = x;
+    this._resultBest.y = y + span * 2;
+
+    this.resultContainner.removeChild(this._resultScore);
+    this._resultScore = new PIXI.Text("Score: "+this._curScore, this._style);
+    this.resultContainner.addChild(this._resultScore);
+    this._resultScore.x = x;
+    this._resultScore.y = y + span * 3;
+
     this.resultContainner.visible = true;
   }
 
